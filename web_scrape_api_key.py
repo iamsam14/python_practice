@@ -3,6 +3,7 @@
 
 import requests
 import pandas as pd
+from secretkeys import api_layer_key
 
 # See ApiLayer Exchange Rates Docs for information about API endpoints
 
@@ -11,7 +12,7 @@ url = "https://api.apilayer.com/exchangerates_data/latest?symbols=&base=EUR"
 # Here we enter the payload and header to send to the Exchange Rates endpoint
 
 headers= {
-  "apikey": "ZAaQHf0AhRwTaxQBD8lk9hnhymzUzHhd"
+  "apikey": api_layer_key
 }
 
 # Performing the GET request
@@ -40,3 +41,4 @@ rates_csv = pd_rates_table.to_csv(index=False)
 
 with open('exchange_rates_1.csv','w') as file:
     file.write(rates_csv)
+    
