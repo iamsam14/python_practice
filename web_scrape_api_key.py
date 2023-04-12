@@ -9,7 +9,7 @@ from secretkeys import api_layer_key
 
 url = "https://api.apilayer.com/exchangerates_data/latest?symbols=&base=EUR"
 
-# Here we enter the payload and header to send to the Exchange Rates endpoint
+# Here we enter the header to send to the Exchange Rates endpoint
 
 headers= {
   "apikey": api_layer_key
