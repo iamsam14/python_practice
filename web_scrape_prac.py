@@ -3,14 +3,12 @@
 # For this practice I will be using some python libraries. You might already have access to these libraries but other may need to install the libraries used in this practice exercise. Run the following commands in the terminal to install the libraries needed for this program
 
 # pip3 install bs4==4.10.0
-# pip3 install html5lib==1.1
 # pip3 install requests
 # pip3 install pandas
 
 # Imported libraries
 
 from bs4 import BeautifulSoup
-import html5lib
 import requests
 import pandas as pd
 

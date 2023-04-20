@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
-import html5lib
 import re
 
 url = 'https://en.wikipedia.org/wiki/List_of_cat_breeds'
